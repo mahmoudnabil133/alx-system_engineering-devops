@@ -1,2 +1,2 @@
 #!/bin/bash
-uniq < test
+uniq -u < test
