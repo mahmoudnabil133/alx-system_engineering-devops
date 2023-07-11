@@ -1,0 +1,2 @@
+#!/bin/bash
+case $1 in encode) echo "$2" | tr 'a-zA-Z' 'n-za-mN-ZA-M' ;; decode) echo "$2" | tr 'n-za-mN-ZA-M' 'a-zA-Z' ;; esac
