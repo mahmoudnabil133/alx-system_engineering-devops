@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 #clock
 
-for i in {0..12}
+cnt=1
+while [ $cnt -le 12]
 do
 echo "Hour: $i"
 counter=1
@@ -9,4 +10,5 @@ while [ $counter -le 59 ]; do
 echo $counter
 ((counter++))
 done
+((cnt++))
 done
