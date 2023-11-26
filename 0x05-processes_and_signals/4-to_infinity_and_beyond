@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # desplay current working process
 
-counter=1
-while [ $counter -le 2 ]; do
+while true; do
 echo To infinity and beyond
 sleep 2
 done
