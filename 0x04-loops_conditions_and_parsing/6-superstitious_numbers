@@ -7,7 +7,7 @@ echo $counter
 if [ $counter -eq 4 ]; then
 echo bad luck from China
 elif [ $counter -eq 9 ]; then
-echo bad luck from Jaban
+echo bad luck from Japan
 elif [ $counter -eq 17 ]; then
 echo bad luck from Italy
 fi 
