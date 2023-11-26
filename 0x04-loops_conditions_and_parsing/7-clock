@@ -4,7 +4,7 @@
 cnt=1
 while [ $cnt -le 12 ]
 do
-echo "Hour: $i"
+echo "Hour: $cnt"
 counter=1
 while [ $counter -le 59 ]; do
 echo $counter
