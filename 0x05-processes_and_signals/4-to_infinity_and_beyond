@@ -4,4 +4,5 @@
 counter=1
 while [ $counter -le 2 ]; do
 echo To infinity and beyond
+sleep 2
 done
