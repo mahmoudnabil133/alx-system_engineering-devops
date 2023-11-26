@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#while loop script
+#while loop  with if
 
 counter=1
 while [ $counter -le 10 ]
