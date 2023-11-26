@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#clock
+
+for i in {1..12}
+do
+echo Hour: $i
+counter=1
+while [ $counter -le 59 ]; do
+echo $counter
+((counter++))
+done
+done
