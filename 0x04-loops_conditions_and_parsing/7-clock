@@ -2,7 +2,7 @@
 #clock
 
 cnt=1
-while [ $cnt -le 12]
+while [ $cnt -le 12 ]
 do
 echo "Hour: $i"
 counter=1
