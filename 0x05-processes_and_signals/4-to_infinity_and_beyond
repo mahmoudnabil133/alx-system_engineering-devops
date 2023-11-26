@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# desplay current working process
+
+counter=1
+while [ $counter -le 2 ]; do
+echo To infinity and beyond
+done
