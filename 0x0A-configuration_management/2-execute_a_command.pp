@@ -1,5 +1,6 @@
-# install puppet-lint -v 2.5.0
+# kill process
 
 exec { 'pkill':
-  path => 'kill killmenow',
+  path     => 'pkill killmenow',
+  provider =>'shell'
 }
