@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# create a private key named school (use -f to sepicify file name, and -N for parphrase)
+
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/school -N "betty"
