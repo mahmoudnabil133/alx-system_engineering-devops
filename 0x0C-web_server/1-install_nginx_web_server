@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # install nginx on nginx server
 
-
 sudo apt-get update
 sudo apt-get -y install nginx
 sudo chown $USER:$USER /var/www/html/index.nginx-debian.html
