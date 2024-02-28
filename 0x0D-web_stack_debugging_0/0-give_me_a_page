@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # debug
 
-sevice aptche2 start
+service aptche2 start
