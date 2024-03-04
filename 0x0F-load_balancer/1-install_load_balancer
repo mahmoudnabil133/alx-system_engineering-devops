@@ -4,6 +4,7 @@
 sudo apt-get -y update
 sudo apt-get -y install haproxy
 sudo chmod -R 755 /etc/haproxy/haproxy.cfg
+sudo chown $USER:$USER /etc/haproxy/haproxy.cfg
 echo "
 frontend my_front
     bind *:0
