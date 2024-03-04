@@ -6,7 +6,7 @@ sudo apt-get -y install haproxy
 sudo chmod -R 755 /etc/haproxy/haproxy.cfg
 echo "
 frotend my_front
-    bind *:80
+    bind *:0
     mode http
     default_backend my_back
 backend my_back
@@ -16,4 +16,4 @@ backend my_back
     server 419885-web-02 52.23.178.5:80 check
 
 ">/etc/haproxy/haproxy.cfg
-sudo service nginx start
+sudo service haproxy restart
