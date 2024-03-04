@@ -32,4 +32,4 @@ new_config=\
 sudo echo "Ceci n'est pas une page" > /var/www/html/404.html
 sudo echo "$new_config" > /etc/nginx/sites-available/default
 
-sudo sevice nginx restart
+sudo sevice nginx start

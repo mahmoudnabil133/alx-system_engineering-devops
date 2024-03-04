@@ -3,5 +3,17 @@
 
 sudo apt-get -y update
 sudo apt-get -y install haproxy
+sudo chmod -R 755 /etc/haproxy/haproxy.cfg
+echo "
+frotend my_front
+    bind *:80
+    mode http
+    default_backend my_back
+backend my_back
+    mode http
+    balace roundrobin
+    server 419885-web-01 54.157.170.194:80 check
+    server 419885-web-02 52.23.178.5:80 check
 
+">/etc/haproxy/haproxy.cfg
 sudo service nginx start
