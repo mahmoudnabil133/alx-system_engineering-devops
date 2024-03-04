@@ -7,12 +7,12 @@ sudo chmod -R 755 /etc/haproxy/haproxy.cfg
 sudo chown $USER:$USER /etc/haproxy/haproxy.cfg
 echo "
 frontend my_front
-    bind *:0
+    bind 0:80
     mode http
     default_backend my_back
 backend my_back
     mode http
-    balace roundrobin
+    balance roundrobin
     server 419885-web-01 54.157.170.194:80 check
     server 419885-web-02 52.23.178.5:80 check
 
