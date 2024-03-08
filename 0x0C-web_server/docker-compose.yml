@@ -1,0 +1,5 @@
+sudo docker pull mongo
+sudo docker run -d -ti ubuntu:16.0
+sudo docker ps
+sudo docker exec -ti e7a425e83b2f /bin/bash
+sudo docker stop ea63d58e61ed
