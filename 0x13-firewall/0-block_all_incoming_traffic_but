@@ -1,4 +1,3 @@
-#!/bin/bash
 apt install ufw
 ufw allow 22/tcp
 ufw allow 443/tcp
