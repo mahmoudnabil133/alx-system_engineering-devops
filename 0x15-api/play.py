@@ -3,6 +3,9 @@
 import requests
 import json
 import csv
+
+import pandas as pd
+
 if __name__ == '__main__':
     url = 'https://jsonplaceholder.typicode.com/users/'
     res = requests.get(url)
@@ -15,8 +18,16 @@ if __name__ == '__main__':
     #     data = json.load(f)
     #     print(data)
 
-    with open('data.csv', 'w') as f:
-        writer = csv.writer(f)
+    with open('data.csv', 'w', newline='') as f:
+        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
         writer.writerow(data[0].keys())
         for user in data:
             writer.writerow(user.values())
+    
+    # data = pd.read_csv('data.csv')
+    # print(data)
+
+    # with open('data.csv', 'r') as f:
+    #     reader = csv.reader(f)
+    #     for r in reader:
+    #         print(r)
