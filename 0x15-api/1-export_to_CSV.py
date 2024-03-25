@@ -3,10 +3,9 @@
 module that get info about todos of some user
 by its id , using an jsonplace hosler api
 """
-
+import csv
 import requests
 import sys
-import csv
 if __name__ == '__main__':
     user_id = sys.argv[1]
     url = 'https://jsonplaceholder.typicode.com/todos?userId={}'.format(
@@ -26,5 +25,5 @@ if __name__ == '__main__':
 
     csv_file = '{}.csv'.format(user_id)
     with open(csv_file, 'w') as f:
-        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
+        writer = csv.writer(f)
         writer.writerows(user_todos)
