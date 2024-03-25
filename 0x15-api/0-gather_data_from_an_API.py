@@ -25,5 +25,6 @@ if __name__ == '__main__':
         name, comp, tot
     ))
     for td in todo_data:
-        print('\t {}'.format(td.get('title')))
+        if td.get('completed'):
+            print('\t {}'.format(td.get('title')))
     # print(todo_data)
