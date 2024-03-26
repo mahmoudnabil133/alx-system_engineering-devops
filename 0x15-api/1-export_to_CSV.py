@@ -24,6 +24,6 @@ if __name__ == '__main__':
         user_todos.append(td_data)
 
     csv_file = '{}.csv'.format(user_id)
-    with open(csv_file, 'w') as f:
-        writer = csv.writer(f)
+    with open(csv_file, 'w', newline='') as f:
+        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
         writer.writerows(user_todos)
