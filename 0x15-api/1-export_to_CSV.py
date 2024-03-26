@@ -15,7 +15,7 @@ if __name__ == '__main__':
     response2 = requests.get(url2)
     todo_data = response.json()
     user_data = response2.json()
-    name = user_data[0].get('name')
+    name = user_data[0].get('username')
     user_todos = []
     for td in todo_data:
         td_data = [user_id, name]
@@ -25,6 +25,5 @@ if __name__ == '__main__':
 
     csv_file = '{}.csv'.format(user_id)
     with open(csv_file, 'w') as f:
-        writer = csv.writer(f, delimiter=',', quotechar='"',
-                            quoting=csv.QUOTE_ALL, lineterminator='\n')
+        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
         writer.writerows(user_todos)
