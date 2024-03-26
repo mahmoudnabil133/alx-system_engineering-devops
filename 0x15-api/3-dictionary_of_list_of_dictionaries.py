@@ -23,13 +23,11 @@ if __name__ == '__main__':
         for td in todo_data:
             if td.get('userId') == id:
                 todo_info = {}
+                todo_info['username'] = username
                 todo_info['task'] = td.get('title')
                 todo_info['completed'] = td.get('completed')
-                todo_info['username'] = username
                 todos_for_user.append(todo_info)
         all_user_todos[id] = todos_for_user
-
-
 
     json_file = 'todo_all_employees.json'
     with open(json_file, 'w') as f:
